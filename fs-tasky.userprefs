@@ -1,8 +1,16 @@
 ﻿<Properties StartupItem="Android/Android.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" PreferredExecutionTarget="Android.21-platform" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/TaskDatabaseADO.cs">
+    <Files>
+      <File FileName="Core/TaskDatabaseADO.cs" Line="26" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Development/Work/fs-tasky/Core/TaskDatabaseADO.cs" line="25" column="4" />
+      <Breakpoint file="/Development/Work/fs-tasky/Core/TaskDatabaseADO.cs" line="75" column="4" />
+      <Breakpoint file="/Development/Work/fs-tasky/Core/TaskDatabaseADO.cs" line="26" column="5" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Android AndroidDesignerPreferredDevice="Nexus 4" />

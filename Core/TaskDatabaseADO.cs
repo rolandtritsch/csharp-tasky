@@ -21,19 +21,17 @@ namespace Tasky.Core {
 			connection = new SqliteConnection("Data Source=" + dbPath);
 			connection.Open();
 
-			// create the table
-			if(!File.Exists(dbPath)) {
-				var c = connection.CreateCommand();
-				c.CommandText = "CREATE TABLE [Items] (_id INTEGER PRIMARY KEY ASC, Name NTEXT, Notes NTEXT, Done INTEGER);";
-				c.ExecuteNonQuery();
-			}
+			// create the table (and ignore the exception, if the table already exists)
+		    var c = connection.CreateCommand();
+			c.CommandText = "CREATE TABLE [Items] (_id INTEGER PRIMARY KEY ASC, Name NTEXT, Notes NTEXT, Done INTEGER);";
+			try {c.ExecuteNonQuery();} catch {}
 		}
 
 		public void Dispose() {
 			connection.Close();
 		}
 
-		public static string DatabaseFilePath(string sqliteFilename) {
+  		public static string DatabaseFilePath(string sqliteFilename) {
 			#if NETFX_CORE
 			var path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, sqliteFilename);
 			#else
