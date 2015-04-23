@@ -1,16 +1,23 @@
-﻿<Properties StartupItem="Android/Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" PreferredExecutionTarget="Android.21-platform" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core/TaskDatabaseADO.cs">
+﻿<Properties StartupItem="iOS/iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="Android.21-platform" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/AppDelegate.cs">
     <Files>
-      <File FileName="Core/TaskDatabaseADO.cs" Line="26" Column="10" />
+      <File FileName="Core/TaskDatabaseADO.cs" Line="3" Column="7" />
+      <File FileName="iOS/AppDelegate.cs" Line="3" Column="19" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="iOS" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="ComponentReferenceFolder" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Development/Work/fs-tasky/Core/TaskDatabaseADO.cs" line="25" column="4" />
-      <Breakpoint file="/Development/Work/fs-tasky/Core/TaskDatabaseADO.cs" line="75" column="4" />
-      <Breakpoint file="/Development/Work/fs-tasky/Core/TaskDatabaseADO.cs" line="26" column="5" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Android AndroidDesignerPreferredDevice="Nexus 4" />
