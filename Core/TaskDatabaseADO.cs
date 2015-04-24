@@ -67,7 +67,7 @@ namespace Tasky.Core {
 			return t;
 		}
 
-		public IList<Task> GetTasks() {
+		public List<Task> GetTasks() {
 			var tl = new List<Task>();
 
 			lock(locker) {

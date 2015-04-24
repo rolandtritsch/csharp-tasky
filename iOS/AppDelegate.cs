@@ -1,5 +1,5 @@
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using UIKit;
+using Foundation;
 
 namespace Tasky.iOS {
 	[Register ("AppDelegate")]
@@ -10,21 +10,16 @@ namespace Tasky.iOS {
 
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options) {
 			// create a new window instance based on the screen size
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			window = new UIWindow(UIScreen.MainScreen.Bounds);
 			
 			// make the window visible
-			window.MakeKeyAndVisible ();
+			window.MakeKeyAndVisible();
 			
 			// create our nav controller
-			navController = new UINavigationController ();
+			navController = new UINavigationController();
 
-			// create our home controller based on the device
-			if (UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone) {
-				homeViewController = new Screens.HomeScreen ();
-			} else {
-				// sample does not contain an iPad UI, so re-use the iPhone one for now; this just shows how you might support iPad
-				homeViewController = new Screens.HomeScreen ();
-			}
+			// create our home controller (iPhone only)
+			homeViewController = new Screens.HomeScreen();
 
 			// push the view controller onto the nav controller and show the window
 			navController.PushViewController(homeViewController, false);
